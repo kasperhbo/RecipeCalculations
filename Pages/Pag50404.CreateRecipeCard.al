@@ -25,13 +25,25 @@ page 50404 CreateRecipeCard
                 {
                     ToolTip = 'Specifies the value of the Consistion field.';
                 }
+                field(ConsistentionsName; Rec.ConsistentionsName)
+                {
+                    ToolTip = 'Specifies the value of the ConsistentionsName field.';
+                }
                 field(EnviromentCode; Rec.EnviromentCode)
                 {
                     ToolTip = 'Specifies the value of the EnviromentCode field.';
                 }
+                field(EnviromentName; Rec.EnviromentCodeName)
+                {
+                    ToolTip = 'Specifies the value of the EnviromentName field.';
+                }
                 field(StrengthClass; Rec.StrengthClass)
                 {
                     ToolTip = 'Specifies the value of the StrengthClass field.';
+                }
+                field(StrengthClassName; Rec.StrengthClassName)
+                {
+                    ToolTip = 'Specifies the value of the StrengthClassName field.';
                 }
             }
         }
