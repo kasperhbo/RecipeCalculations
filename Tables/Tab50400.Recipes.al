@@ -101,7 +101,7 @@ table 50400 Recipes
     var
         recNoCode: Codeunit RecNummering;
     begin
-        recNoCode.GetRecNo('Recipe', rec."RecipeNO.", "RecipeNO.");
+        recNoCode.GetRecNo('RECIPE', rec."RecipeNO.", "RecipeNO.");
     end;
 
     //TODO: Find a way to make this better bc there is a lot of code duplication

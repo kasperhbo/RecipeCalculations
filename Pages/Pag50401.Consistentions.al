@@ -5,7 +5,7 @@ page 50401 Consistentions
     PageType = List;
     SourceTable = Consistentions;
     UsageCategory = Lists;
-    // CardPageId = Consistentions;
+
 
     layout
     {

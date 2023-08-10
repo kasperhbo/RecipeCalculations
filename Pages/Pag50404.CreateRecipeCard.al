@@ -1,3 +1,4 @@
+
 page 50404 CreateRecipeCard
 {
     ApplicationArea = All;
@@ -46,6 +47,23 @@ page 50404 CreateRecipeCard
                     ToolTip = 'Specifies the value of the StrengthClassName field.';
                 }
             }
+
+            group(Lines)
+            {
+                Caption = 'Lines';
+                part(RecipeLines; RecipeLineCardPart)
+                {
+                    ApplicationArea = All;
+                    SubPageLink = "RecipeNo." = FIELD("RecipeNo.");
+                }
+            }
         }
     }
+
+    trigger OnOpenPage();
+    var
+        RecipeTracker: Codeunit "RecipeTracker";
+    begin
+        RecipeTracker.SetCurrentRecipe(Rec);
+    end;
 }
